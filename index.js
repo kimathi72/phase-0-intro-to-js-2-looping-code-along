@@ -1,20 +1,22 @@
-// Code your solutions in this file
-// Code your solutions in this file
-const gifts=["Guadalupe", "Ollie", "Aki"];
-function writeCards(){
-    const response=[];
-    let q;
-    for(q=0; q<gifts.length; q++){
-       response[q]=`Thank you, ${gifts[q]}, for the wonderful surprise gift!`
-      
-    }
-    return response;
-}
 
-function countDown(){
-    let y=10
-    while(y>=0){
-        console.log(y--);
 
+function writeCards(array , eventName ){
+    const eventMessages = [];
+    for (let count = 0; count < array.length; count++){
+        eventMessages.push(`Thank you, ${array[count]}, for the wonderful ${eventName} gift!`);
+        
     }
+    console.log(eventMessages);
+    return eventMessages;
 }
+writeCards(["Ada","Brendan","Ali"], "birthday");
+
+function countDown (){
+    let count = 10;
+    while (count >=0){
+        console.log (count);
+        count--;
+    }
+    return count;
+}
+countDown();
