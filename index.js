@@ -14,8 +14,8 @@ writeCards(["Ada","Brendan","Ali"], "birthday");
 function countDown (){
     let count = 10;
     while (count >=0){
-        console.log (count);
-        count--;
+        console.log (count--);
+        
     }
     return count;
 }
