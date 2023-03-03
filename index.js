@@ -1,7 +1,13 @@
 
 
 function writeCards(array , eventName ){
-    const eventMessages = [];
+   
+
+    let eventMessages = [];
+    let beforeEach =  () => {
+        eventMessages.length = 0;
+    }
+    beforeEach();
     for (let count = 0; count < array.length; count++){
         eventMessages.push(`Thank you, ${array[count]}, for the wonderful ${eventName} gift!`);
         
